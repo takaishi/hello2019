@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset/versioned"
-	samplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset/versioned/typed/foo/v1alpha"
-	fakesamplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset/versioned/typed/foo/v1alpha/fake"
+	clientset "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned"
+	samplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/typed/foo/v1alpha"
+	fakesamplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/typed/foo/v1alpha/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

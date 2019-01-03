@@ -19,8 +19,8 @@ limitations under the License.
 package v1alpha
 
 import (
-	v1alpha "github.com/takaishi/hello2019/hello-custom-controller/pkg/apis/foo/v1alpha"
-	scheme "github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset/versioned/scheme"
+	v1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/apis/foo/v1alpha"
+	scheme "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

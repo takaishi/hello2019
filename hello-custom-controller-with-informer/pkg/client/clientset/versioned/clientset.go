@@ -19,7 +19,7 @@ limitations under the License.
 package versioned
 
 import (
-	samplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset/versioned/typed/foo/v1alpha"
+	samplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/typed/foo/v1alpha"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

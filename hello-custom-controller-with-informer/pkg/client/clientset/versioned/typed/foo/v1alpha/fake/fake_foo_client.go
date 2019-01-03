@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1alpha "github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset/versioned/typed/foo/v1alpha"
+	v1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/typed/foo/v1alpha"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

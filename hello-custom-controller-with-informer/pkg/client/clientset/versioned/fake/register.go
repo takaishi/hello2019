@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	samplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller/pkg/apis/foo/v1alpha"
+	samplecontrollerv1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/apis/foo/v1alpha"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
