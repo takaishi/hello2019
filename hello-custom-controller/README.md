@@ -59,7 +59,7 @@ CRDだけではリソースを作成できるだけで何も起きない。デ�
 
 
 
-`pkg/apis/foo`以下を作成した後、code-generatorでクライアント用コードを生成する。deepcopyとclient飲み。code-generatorはrefs/tags/kubernetes-1.12.3を使用：
+`pkg/apis/foo`以下を作成した後、code-generatorでクライアント用コードを生成する。deepcopyとclientのみ。code-generatorはrefs/tags/kubernetes-1.12.3を使用：
 
 ```
 $ bash ~/src/k8s.io/code-generator/generate-groups.sh client,deepcopy github.com/takaishi/hello2019/hello-custom-controller/pkg/client github.com/takaishi/hello2019/hello-custom-controller/pkg/apis foo:v1alpha
