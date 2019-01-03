@@ -11,6 +11,9 @@ $ minikube start --memory=8192 --cpus=4 \
     --bootstrapper=kubeadm
 ```
 
+- 
+  go: v1.11.2
+
 ## CRD
 
 CRDについては [hello custom resource](https://github.com/takaishi/hello2018/tree/master/hello-custom-resource) や [CRDについてのメモ](https://repl.info/archives/2384/) を参照。
@@ -47,18 +50,21 @@ CRDだけではリソースを作成できるだけで何も起きない。デ�
   * コントローラのイベントフロー解説
 * [KubernetesのCustom Resource Definition(CRD)とCustom Controller](https://www.sambaiz.net/article/182/)
 * [Kubernetes Deep Dive: Code Generation for CustomResources](https://blog.openshift.com/kubernetes-deep-dive-code-generation-customresources/)
+  * code-generatorはいくつかの機能を持つ
+    * deepcopy-gen - 各型についてDeepCopy用のメソッドを生成？
+    * client-gen - カスタムリソースを扱うためのクライアントセットを生成
+    * informer-gen - カスタムリソースの変更に対応するためのイベントベースインターフェースを生成
+    * lister-gen - GetとListについて、読み取り用キャッシュレイヤを扱うコードを生成
 * https://github.com/kubernetes/client-go/blob/master/examples/in-cluster-client-configuration/main.go
 
 
 
-`pkg/apis/foo`以下を作成した後、code-generatorでクライアント用コードを生成する。code-generatorはrefs/tags/kubernetes-1.12.3を使用：
+`pkg/apis/foo`以下を作成した後、code-generatorでクライアント用コードを生成する。deepcopyとclient飲み。code-generatorはrefs/tags/kubernetes-1.12.3を使用：
 
 ```
-$ env GO111MODULE=off bash ~/src/k8s.io/code-generator/generate-groups.sh all github.com/takaishi/hello2019/hello-custom-controller/pkg/client github.com/takaishi/hello2019/hello-custom-controller/pkg/apis foo:v1alpha
+$ bash ~/src/k8s.io/code-generator/generate-groups.sh client,deepcopy github.com/takaishi/hello2019/hello-custom-controller/pkg/client github.com/takaishi/hello2019/hello-custom-controller/pkg/apis foo:v1alpha
 Generating deepcopy funcs
 Generating clientset for foo:v1alpha at github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset
-Generating listers for foo:v1alpha at github.com/takaishi/hello2019/hello-custom-controller/pkg/client/listers
-Generating informers for foo:v1alpha at github.com/takaishi/hello2019/hello-custom-controller/pkg/client/informers
 ```
 
 これでGoからFooリソースを扱うことが出来る。カスタムコントローラーの最初の1歩として、Fooリソースを取得してログに出力してみる：
