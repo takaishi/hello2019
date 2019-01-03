@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/takaishi/hello2019/hello-custom-controller/my-sample-controller/pkg/apis/foo"
+	"github.com/takaishi/hello2019/hello-custom-controller/pkg/apis/foo"
 )
 
 // SchemeGroupVersion is group version used to register these objects
