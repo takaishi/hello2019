@@ -33,6 +33,7 @@ CRDだけではリソースを作成できるだけで何も起きない。デ�
   * このリソースは `Deployment` を定義するためのカスタムリソース
     * 名前とレプリカ数を指定できる
   * client-goライブラリを使っている
+* [KubernetesのCRDまわりを整理する。](https://qiita.com/cvusk/items/773e222e0971a5391a51)
 
 
 
