@@ -55,7 +55,7 @@ CRDだけではリソースを作成できるだけで何も起きない。デ�
 ```
 $ env GO111MODULE=off bash ~/src/k8s.io/code-generator/generate-groups.sh all github.com/takaishi/hello2019/hello-custom-controller/pkg/client github.com/takaishi/hello2019/hello-custom-controller/pkg/apis foo:v1alpha
 Generating deepcopy funcs
-Generating clientset for foo:v1alpha at github.com/takaishi/hello2018/hello-custom-resource/my-sample-controller/pkg/client/clientset
-Generating listers for foo:v1alpha at github.com/takaishi/hello2018/hello-custom-resource/my-sample-controller/pkg/client/listers
-Generating informers for foo:v1alpha at github.com/takaishi/hello2018/hello-custom-resource/my-sample-controller/pkg/client/informers
+Generating clientset for foo:v1alpha at github.com/takaishi/hello2019/hello-custom-controller/pkg/client/clientset
+Generating listers for foo:v1alpha at github.com/takaishi/hello2019/hello-custom-controller/pkg/client/listers
+Generating informers for foo:v1alpha at github.com/takaishi/hello2019/hello-custom-controller/pkg/client/informers
 ```
