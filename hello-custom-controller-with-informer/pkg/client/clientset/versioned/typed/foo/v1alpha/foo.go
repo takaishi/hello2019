@@ -19,12 +19,12 @@ limitations under the License.
 package v1alpha
 
 import (
-	v1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/apis/foo/v1alpha"
-	scheme "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/scheme"
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	types "k8s.io/apimachinery/pkg/types"
-	watch "k8s.io/apimachinery/pkg/watch"
-	rest "k8s.io/client-go/rest"
+	"github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/apis/foo/v1alpha"
+	"github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned/scheme"
+	"k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/types"
+	"k8s.io/apimachinery/pkg/watch"
+	"k8s.io/client-go/rest"
 )
 
 // FoosGetter has a method to return a FooInterface.

@@ -2,6 +2,11 @@
 
 informerを使ってイベントベースでカスタムリソースの変更に対応する。CRDについては [hello custom resource](https://github.com/takaishi/hello2018/tree/master/hello-custom-resource) や [CRDについてのメモ](https://repl.info/archives/2384/) を参照。Custom Controllerの最初の一歩については [hello-custom-controller](https://github.com/takaishi/hello2019/tree/master/hello-custom-controller) を参照
 
+## 参考
+
+* [Building an operator for Kubernetes with the sample-controller](https://itnext.io/building-an-operator-for-kubernetes-with-the-sample-controller-b4204be9ad56)
+* 
+
 ## 準備
 
 kubernetes v1.12.3を使う。minikubeで環境を作成

@@ -19,16 +19,16 @@ limitations under the License.
 package v1alpha
 
 import (
-	time "time"
+	"time"
 
 	foov1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/apis/foo/v1alpha"
-	versioned "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha "github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/listers/foo/v1alpha"
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	watch "k8s.io/apimachinery/pkg/watch"
-	cache "k8s.io/client-go/tools/cache"
+	"github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/clientset/versioned"
+	"github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/informers/externalversions/internalinterfaces"
+	"github.com/takaishi/hello2019/hello-custom-controller-with-informer/pkg/client/listers/foo/v1alpha"
+	"k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/apimachinery/pkg/watch"
+	"k8s.io/client-go/tools/cache"
 )
 
 // FooInformer provides access to a shared informer and lister for
