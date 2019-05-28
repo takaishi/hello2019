@@ -15,6 +15,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	cfg.SetAttr("timezone", "Asia/Tokyo")
 	cfg.AddUser(&cloudinit.User{Name: "r_takaishi"})
 	cfg.AddPackage("vim")
 
