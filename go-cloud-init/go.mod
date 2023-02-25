@@ -19,9 +19,7 @@ require (
 	github.com/lunixbochs/vtclean v1.0.0 // indirect
 	github.com/mattn/go-colorable v0.1.2 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
-	golang.org/x/crypto v0.0.0-20190513172903-22d7a77e9e5f // indirect
-	golang.org/x/net v0.0.0-20190522155817-f3200d17e092 // indirect
-	golang.org/x/text v0.3.2 // indirect
+	golang.org/x/crypto v0.1.0 // indirect
 	gopkg.in/juju/names.v2 v2.0.0-20180621093930-fd59336b4621 // indirect
 	gopkg.in/yaml.v2 v2.2.2 // indirect
 )
